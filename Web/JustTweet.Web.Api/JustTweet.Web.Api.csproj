@@ -250,10 +250,6 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Common\JustTweet.Common\JustTweet.Common.csproj">
-      <Project>{22e3ec6d-1a63-40af-b801-8465c494834d}</Project>
-      <Name>JustTweet.Common</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Data\JustTweet.Data.Models\JustTweet.Data.Models.csproj">
       <Project>{ff458bbd-d3ff-49b7-b2bd-e926bb4ef5cb}</Project>
       <Name>JustTweet.Data.Models</Name>
