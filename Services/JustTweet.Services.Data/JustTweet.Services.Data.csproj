@@ -57,13 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommentsService.cs" />
-    <Compile Include="Contracts\ICommentsService.cs" />
-    <Compile Include="Contracts\IJustTweetsService.cs" />
-    <Compile Include="Contracts\IUsersService.cs" />
+    <Compile Include="TweetsService.cs" />
+    <Compile Include="Contracts\ITweetsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="JustTweetsService.cs" />
-    <Compile Include="UsersService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Data\JustTweet.Data.Models\JustTweet.Data.Models.csproj">

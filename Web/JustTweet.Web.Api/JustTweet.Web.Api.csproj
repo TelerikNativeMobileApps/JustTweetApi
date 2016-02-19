@@ -210,9 +210,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CommentsController.cs" />
-    <Compile Include="Controllers\JustTweetsController.cs" />
-    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Controllers\TweetsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -221,14 +219,8 @@
     <Compile Include="Infrastructure\Validation\ValidateModelAttribute.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\CommentRequestModel.cs" />
-    <Compile Include="Models\CommentResponseModel.cs" />
-    <Compile Include="Models\RatingRequestModel.cs" />
-    <Compile Include="Models\JustTweetDetailsPrivateResponseModel.cs" />
-    <Compile Include="Models\JustTweetDetailsPublicReponseModel.cs" />
-    <Compile Include="Models\JustTweetRequestModel.cs" />
-    <Compile Include="Models\JustTweetResponseModel.cs" />
-    <Compile Include="Models\UserResponseModel.cs" />
+    <Compile Include="Models\TweetRequestModel.cs" />
+    <Compile Include="Models\TweetResponseModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -250,6 +242,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\JustTweet.Common\JustTweet.Common.csproj">
+      <Project>{839c2f9e-c24b-4461-82d5-cf778267c170}</Project>
+      <Name>JustTweet.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Data\JustTweet.Data.Models\JustTweet.Data.Models.csproj">
       <Project>{ff458bbd-d3ff-49b7-b2bd-e926bb4ef5cb}</Project>
       <Name>JustTweet.Data.Models</Name>

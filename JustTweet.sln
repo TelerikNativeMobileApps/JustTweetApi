@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustTweet.Web.Api", "Web\Ju
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustTweet.Services.Data", "Services\JustTweet.Services.Data\JustTweet.Services.Data.csproj", "{2C10C45D-97FB-4AEC-ACFA-1B89699CBB83}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{8B7396D6-3008-4121-92FF-63020B3A206B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustTweet.Common", "Common\JustTweet.Common\JustTweet.Common.csproj", "{839C2F9E-C24B-4461-82D5-CF778267C170}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,10 @@ Global
 		{2C10C45D-97FB-4AEC-ACFA-1B89699CBB83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C10C45D-97FB-4AEC-ACFA-1B89699CBB83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C10C45D-97FB-4AEC-ACFA-1B89699CBB83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{839C2F9E-C24B-4461-82D5-CF778267C170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{839C2F9E-C24B-4461-82D5-CF778267C170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{839C2F9E-C24B-4461-82D5-CF778267C170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{839C2F9E-C24B-4461-82D5-CF778267C170}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,5 +56,6 @@ Global
 		{FF458BBD-D3FF-49B7-B2BD-E926BB4EF5CB} = {AF642A5F-0846-4387-87BA-77E6F536AB36}
 		{9522FB71-D5FA-4F3B-85D3-FD16ADD725EC} = {9C2F5233-A8C2-4661-983A-0C5FC7D41971}
 		{2C10C45D-97FB-4AEC-ACFA-1B89699CBB83} = {BED5EF74-8CE9-44E9-ADE0-8F570DEA1E7E}
+		{839C2F9E-C24B-4461-82D5-CF778267C170} = {8B7396D6-3008-4121-92FF-63020B3A206B}
 	EndGlobalSection
 EndGlobal
