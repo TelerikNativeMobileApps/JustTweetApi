@@ -40,9 +40,7 @@
         {
             DependenciesRegistration(kernel);
             
-            kernel.Bind<IJustTweetsService>().To<JustTweetsService>();
-            kernel.Bind<ICommentsService>().To<CommentsService>();
-            kernel.Bind<IUsersService>().To<UsersService>();
+            kernel.Bind<ITweetsService>().To<TweetsService>();
         }
     }
 }

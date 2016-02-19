@@ -21,7 +21,8 @@
             var newTweet = new Tweet
             {
                 UserId = userId,
-                Text = text
+                Text = text,
+                CreatedOn = DateTime.Now
             };
 
             this.tweets.Add(newTweet);
