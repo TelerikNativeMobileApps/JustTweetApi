@@ -2,7 +2,6 @@
 {
     using System.Web.Http;
     using Models;
-    using Infrastructure.Validation;
     using Services.Data.Contracts;
     using AutoMapper.QueryableExtensions;
     using System.Linq;
@@ -24,12 +23,16 @@
 
             return this.Ok(result);
         }
-
-        [ValidateModel]
+        
         [HttpPost]
         [Authorize]
         public IHttpActionResult Post(TweetRequestModel tweet)
         {
+            if (!ModelState.IsValid)
+            {
+                return this.BadRequest("Tweet length must be between 10 and 300");
+            }
+
             this.tweets.Add(this.User.Identity.GetUserId(), tweet.Text);
 
             return this.Ok();

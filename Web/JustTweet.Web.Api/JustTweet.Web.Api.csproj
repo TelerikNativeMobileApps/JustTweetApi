@@ -17,7 +17,7 @@
     <AssemblyName>JustTweet.Web.Api</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -216,7 +216,6 @@
     </Compile>
     <Compile Include="Infrastructure\Mappings\IHaveCustomMappings.cs" />
     <Compile Include="Infrastructure\Mappings\IMapFrom.cs" />
-    <Compile Include="Infrastructure\Validation\ValidateModelAttribute.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\TweetRequestModel.cs" />
@@ -280,7 +279,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>37127</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/JustTweet.Web.Api</IISUrl>
+          <IISUrl>http://localhost:37127/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
